@@ -1,0 +1,21 @@
+<h2>Persons</h2>
+<a class="nav-item nav-link" routerLink="/add_person">Add</a>
+
+<table class="table-striped ">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>DoB</th>
+      <th>Hobbies</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let person of persons">
+      <td>{{ person.firstName }} {{ person.lastName }}</td>
+      <td>{{ person.birthDate }}</td>
+      <td>{{ person.hobbies }}</td>
+      <!-- <td><img [src]="person.imageData" /></td> -->
+    </tr>
+  </tbody>
+</table>
